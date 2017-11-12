@@ -1,0 +1,1858 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+/* --------------------x------------ 
+
+Primary style
+
+-------------------------------- */
+/* line 14, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 19, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+*::after, *::before {
+  content: ''; }
+
+/* line 23, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 27, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+body {
+  font-size: 1.6rem;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #353E57; }
+
+/* line 35, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+a {
+  color: #4183D7;
+  text-decoration: none; }
+  /* line 38, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  a:hover {
+    color: #6BB9F0; }
+
+/* line 43, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+p {
+  font-size: 14pt;
+  margin: 2em 2em;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  /* line 48, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  p.white {
+    color: #ffffff;
+    font-weight: 300; }
+  /* line 52, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  p.headline-tag {
+    color: red;
+    font-style: italic; }
+
+/* line 58, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+em {
+  display: block;
+  color: #6b7175;
+  font-style: italic;
+  font-size: 2rem;
+  margin: 0.6em 0; }
+
+/* line 67, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+img.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* line 76, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.techsols {
+  width: 399px;
+  height: 465px; }
+
+/* line 81, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.services {
+  width: 130px;
+  height: 130px; }
+
+/* line 86, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.panel {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 30px; }
+  /* line 93, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .panel h2 {
+    background: #33b5e5;
+    /*height: 64px;*/
+    margin: -1px -1px 0;
+    padding: 0 15px;
+    border-radius: 3px 3px 0 0;
+    color: #ffffff;
+    font-size: 1.5em;
+    line-height: 34px; }
+  /* line 104, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .panel p {
+    padding: 10px; }
+  /* line 108, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .panel ul li {
+    padding: 15px;
+    border-bottom: 1px solid #e6e6e6; }
+    /* line 111, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .panel ul li span {
+      text-align: left;
+      /*width:20%;*/
+      padding-right: 55px;
+      display: table-cell; }
+      /* line 117, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+      .panel ul li span i {
+        padding-left: 3px;
+        padding-top: 4px;
+        display: inline-block;
+        color: #33b5e5; }
+      /* line 123, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+      .panel ul li span.date {
+        padding-top: 10px;
+        font-size: 20px; }
+
+/* line 132, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.panel-skills {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 30px; }
+  /* line 139, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .panel-skills h2 {
+    background: #33b5e5;
+    /*height: 64px;*/
+    margin: -1px -1px 0;
+    padding: 0 15px;
+    border-radius: 3px 3px 0 0;
+    color: #ffffff;
+    font-size: 1.5em;
+    line-height: 34px; }
+  /* line 151, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .panel-skills ul li {
+    font-size: 15px;
+    padding: 15px;
+    margin: 10px 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: #33b5e5;
+    color: #fff;
+    display: inline-block; }
+
+/* line 165, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.spotify {
+  color: #23D05F;
+  height: 190px;
+  text-align: center; }
+
+/* line 171, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-btn {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #353E57;
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 50px;
+  /*box-shadow: inset 0 1px 0 rgba(#fff, .5), 0 0 5px rgba(#000, .1);*/
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+  /* line 184, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .no-touch .cd-btn:hover {
+    /*box-shadow: inset 0 1px 0 rgba(#fff, .5), 0 0 20px rgba(#000, .3);*/
+    color: #009ed6; }
+
+/* line 191, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.6s;
+  -moz-transition: visibility 0s 0.6s;
+  transition: visibility 0s 0.6s; }
+  /* line 199, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-panel::after {
+    /* overlay layer */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    -webkit-transition: background 0.3s 0.3s;
+    -moz-transition: background 0.3s 0.3s;
+    transition: background 0.3s 0.3s; }
+  /* line 211, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-panel.is-visible {
+    visibility: visible;
+    -webkit-transition: visibility 0s 0s;
+    -moz-transition: visibility 0s 0s;
+    transition: visibility 0s 0s; }
+    /* line 214, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-panel.is-visible::after {
+      background: rgba(0, 0, 0, 0.6);
+      -webkit-transition: background 0.3s 0s;
+      -moz-transition: background 0.3s 0s;
+      transition: background 0.3s 0s; }
+    /* line 218, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-panel.is-visible .cd-panel-close::before {
+      -webkit-animation: cd-close-1 0.6s 0.3s;
+      -moz-animation: cd-close-1 0.6s 0.3s;
+      animation: cd-close-1 0.6s 0.3s; }
+    /* line 221, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-panel.is-visible .cd-panel-close::after {
+      -webkit-animation: cd-close-2 0.6s 0.3s;
+      -moz-animation: cd-close-2 0.6s 0.3s;
+      animation: cd-close-2 0.6s 0.3s; }
+
+@-webkit-keyframes cd-close-1 {
+  /* line 228, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0); }
+
+  /* line 231, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -webkit-transform: rotate(45deg); } }
+
+@-moz-keyframes cd-close-1 {
+  /* line 228, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0%, 50% {
+    -moz-transform: rotate(0); }
+
+  /* line 231, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -moz-transform: rotate(45deg); } }
+
+@keyframes cd-close-1 {
+  /* line 228, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0); }
+
+  /* line 231, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); } }
+
+@-webkit-keyframes cd-close-2 {
+  /* line 237, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0); }
+
+  /* line 240, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -webkit-transform: rotate(-45deg); } }
+
+@-moz-keyframes cd-close-2 {
+  /* line 237, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0%, 50% {
+    -moz-transform: rotate(0); }
+
+  /* line 240, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -moz-transform: rotate(-45deg); } }
+
+@keyframes cd-close-2 {
+  /* line 237, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0); }
+
+  /* line 240, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); } }
+
+/* line 245, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-panel-header {
+  position: fixed;
+  width: 90%;
+  height: 50px;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.96);
+  z-index: 2;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  -webkit-transition: top 0.3s 0s;
+  -moz-transition: top 0.3s 0s;
+  transition: top 0.3s 0s; }
+  /* line 254, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-panel-header h1 {
+    font-weight: bold;
+    color: #353E57;
+    padding-left: 5%; }
+  /* line 260, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .from-right .cd-panel-header, .from-left .cd-panel-header {
+    top: -50px; }
+  /* line 263, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .from-right .cd-panel-header {
+    right: 0; }
+  /* line 266, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .from-left .cd-panel-header {
+    left: 0; }
+  /* line 269, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .is-visible .cd-panel-header {
+    top: 0;
+    -webkit-transition: top 0.3s 0.3s;
+    -moz-transition: top 0.3s 0.3s;
+    transition: top 0.3s 0.3s; }
+  @media only screen and (min-width: 768px) {
+    .cd-panel-header {
+      width: 70%; } }
+  @media only screen and (min-width: 1170px) {
+    .cd-panel-header {
+      width: 50%; } }
+
+/* line 281, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-panel-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  /* image replacement */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap; }
+  /* line 293, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-panel-close::before, .cd-panel-close::after {
+    /* close icon created in CSS */
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    height: 3px;
+    width: 20px;
+    background-color: #424f5c;
+    /* this fixes a bug where pseudo elements are slighty off position */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  /* line 307, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-panel-close::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  /* line 310, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-panel-close::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  /* line 313, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .no-touch .cd-panel-close:hover {
+    background-color: #424f5c; }
+    /* line 315, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .no-touch .cd-panel-close:hover::before, .no-touch .cd-panel-close:hover::after {
+      background-color: #ffffff;
+      -webkit-transition-property: -webkit-transform;
+      -moz-transition-property: -moz-transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.3s;
+      -moz-transition-duration: 0.3s;
+      transition-duration: 0.3s; }
+    /* line 320, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .no-touch .cd-panel-close:hover::before {
+      -webkit-transform: rotate(220deg);
+      -moz-transform: rotate(220deg);
+      -ms-transform: rotate(220deg);
+      -o-transform: rotate(220deg);
+      transform: rotate(220deg); }
+    /* line 323, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .no-touch .cd-panel-close:hover::after {
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg); }
+
+/* line 329, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-panel-container {
+  position: fixed;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  background: #dbe2e9;
+  z-index: 1;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s; }
+  /* line 339, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .from-right .cd-panel-container {
+    right: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  /* line 343, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .from-left .cd-panel-container {
+    left: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -moz-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    -o-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  /* line 347, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .is-visible .cd-panel-container {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    transition-delay: 0s; }
+  @media only screen and (min-width: 768px) {
+    .cd-panel-container {
+      width: 70%; } }
+  @media only screen and (min-width: 1170px) {
+    .cd-panel-container {
+      width: 50%; } }
+
+/* line 359, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-panel-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 70px 5%;
+  overflow: auto;
+  /* smooth scrolling on touch devices */
+  -webkit-overflow-scrolling: touch; }
+  /* line 370, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-panel-content p {
+    /*@include font-size(14px);*/
+    color: #424f5c;
+    line-height: 1.4;
+    margin: 2em 0; }
+    /* line 376, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-panel-content p:first-of-type {
+      margin-top: 0; }
+  @media only screen and (min-width: 768px) {
+    /* line 381, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-panel-content p {
+      /*@include font-size(16px);*/
+      line-height: 1.6; }
+ }
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+/* line 394, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-header {
+  height: 95px;
+  width: 90%;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+  /* line 15, c:\Program Files (x86)\Prepros\resources\app\node_modules\node-bourbon\assets\stylesheets/addons/clearfix */
+  .cd-header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 404, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-header.nav-is-visible {
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    -o-transform: translateY(80px);
+    transform: translateY(80px); }
+  @media only screen and (min-width: 768px) {
+    /* line 408, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-header.nav-is-visible {
+      -webkit-transform: translateY(170px);
+      -moz-transform: translateY(170px);
+      -ms-transform: translateY(170px);
+      -o-transform: translateY(170px);
+      transform: translateY(170px); }
+ }
+
+/* line 414, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-logo {
+  float: left;
+  margin-top: 17px; }
+  /* line 417, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-logo img {
+    width: 64px;
+    height: 64px; }
+
+/* line 423, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-3d-nav-trigger {
+  position: relative;
+  float: right;
+  height: 45px;
+  width: 45px;
+  margin-top: 18px;
+  /* replace text with background image */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent; }
+  /* line 435, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-3d-nav-trigger span, .cd-3d-nav-trigger span::before, .cd-3d-nav-trigger span::after {
+    /* hamburger icon in CSS */
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    background-color: #FFF;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  /* line 444, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-3d-nav-trigger span {
+    /* this is the central line */
+    top: 21px;
+    left: 8px;
+    -webkit-transition: background 0.2s 0.5s;
+    -moz-transition: background 0.2s 0.5s;
+    transition: background 0.2s 0.5s; }
+    /* line 450, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav-trigger span::before, .cd-3d-nav-trigger span:after {
+      /* these are the upper and lower lines */
+      content: '';
+      left: 0;
+      -webkit-transition: -webkit-transform 0.2s 0.5s;
+      -moz-transition: -moz-transform 0.2s 0.5s;
+      transition: transform 0.2s 0.5s; }
+    /* line 457, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav-trigger span::before {
+      bottom: 8px; }
+    /* line 460, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav-trigger span::after {
+      top: 8px; }
+  /* line 465, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .nav-is-visible .cd-3d-nav-trigger span {
+    /* hide line in the center */
+    background-color: rgba(255, 255, 255, 0); }
+    /* line 469, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .nav-is-visible .cd-3d-nav-trigger span::before, .nav-is-visible .cd-3d-nav-trigger span::after {
+      /* keep visible other 2 lines */
+      background-color: white; }
+    /* line 474, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .nav-is-visible .cd-3d-nav-trigger span::before {
+      -webkit-transform: translateY(8px) rotate(-45deg);
+      -moz-transform: translateY(8px) rotate(-45deg);
+      -ms-transform: translateY(8px) rotate(-45deg);
+      -o-transform: translateY(8px) rotate(-45deg);
+      transform: translateY(8px) rotate(-45deg); }
+    /* line 477, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .nav-is-visible .cd-3d-nav-trigger span::after {
+      -webkit-transform: translateY(-8px) rotate(45deg);
+      -moz-transform: translateY(-8px) rotate(45deg);
+      -ms-transform: translateY(-8px) rotate(45deg);
+      -o-transform: translateY(-8px) rotate(45deg);
+      transform: translateY(-8px) rotate(45deg); }
+
+/* line 484, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-3d-nav-container {
+  /* this is the 3D navigation container */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #000000;
+  visibility: hidden;
+  /* enable a 3D-space for children elements */
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0.5s;
+  -moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
+  transition: transform 0.5s 0s, visibility 0s 0.5s; }
+  /* line 501, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-3d-nav-container.nav-is-visible {
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.5s 0s, visibility 0.5s 0s;
+    -moz-transition: -moz-transform 0.5s 0s, visibility 0.5s 0s;
+    transition: transform 0.5s 0s, visibility 0.5s 0s; }
+  @media only screen and (min-width: 768px) {
+    .cd-3d-nav-container {
+      height: 170px; } }
+
+/* line 513, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-3d-nav {
+  /* this is the 3D rotating navigation */
+  position: relative;
+  height: 100%;
+  background-color: #2A3043;
+  /* Force Hardware Acceleration */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s; }
+  /* line 526, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-3d-nav::after {
+    /* menu dark cover layer - to enhance perspective effect */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s 0s, visibility 0.5s 0s;
+    -moz-transition: opacity 0.5s 0s, visibility 0.5s 0s;
+    transition: opacity 0.5s 0s, visibility 0.5s 0s; }
+  /* line 540, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-3d-nav li {
+    height: 100%;
+    width: 20%;
+    float: left; }
+    /* line 543, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav li:first-of-type a::before {
+      background-image: url(../img/icon-1.svg); }
+    /* line 546, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav li:nth-of-type(2) a::before {
+      background-image: url(../img/icon-2.svg); }
+    /* line 549, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav li:nth-of-type(3) a::before {
+      background-image: url(../img/icon-3.svg); }
+    /* line 552, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav li:nth-of-type(4) a::before {
+      background-image: url(../img/icon-4.svg); }
+    /* line 555, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav li:nth-of-type(5) a::before {
+      background-image: url(../img/icon-5.svg); }
+  /* line 559, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-3d-nav a {
+    position: relative;
+    display: block;
+    height: 100%;
+    color: transparent;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    transition: background-color 0.2s; }
+    /* line 565, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav a::before {
+      /* navigation icons */
+      content: '';
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      bottom: auto;
+      right: auto;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background-size: 32px 64px;
+      background-repeat: no-repeat;
+      background-position: 0 0; }
+    /* line 577, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .no-touch .cd-3d-nav a:hover {
+      background-color: #181c27; }
+  /* line 581, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-3d-nav .cd-selected a {
+    background-color: #0e1118; }
+    /* line 583, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .no-touch .cd-3d-nav .cd-selected a:hover {
+      background-color: #0e1118; }
+    /* line 586, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav .cd-selected a::before {
+      background-position: 0 -32px; }
+  /* line 590, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .nav-is-visible .cd-3d-nav {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
+    /* line 592, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .nav-is-visible .cd-3d-nav::after {
+      /* menu cover layer - hide it when navigation is visible */
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: opacity 0.5s 0s, visibility 0s 0.5s;
+      -moz-transition: opacity 0.5s 0s, visibility 0s 0.5s;
+      transition: opacity 0.5s 0s, visibility 0s 0.5s; }
+  @media only screen and (min-width: 768px) {
+    /* line 601, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-3d-nav a {
+      padding: 7.6em 1em 0;
+      color: #ffffff;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: center;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      /* truncate text with ellipsis if too long */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      /* line 615, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+      .cd-3d-nav a::before {
+        top: 4.4em;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%); }
+ }
+
+/* line 623, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-marker {
+  /* line at the bottom of nav selected item */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 20%;
+  background-color: currentColor;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform: translateZ(0) rotateX(90deg);
+  -moz-transform: translateZ(0) rotateX(90deg);
+  -ms-transform: translateZ(0) rotateX(90deg);
+  -o-transform: translateZ(0) rotateX(90deg);
+  transform: translateZ(0) rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+  -moz-transition: -moz-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+  transition: transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s; }
+  /* line 637, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-marker::before {
+    /* triangle at the bottom of nav selected item */
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 0;
+    width: 0;
+    border: 10px solid transparent;
+    border-bottom-color: inherit; }
+  /* line 649, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .nav-is-visible .cd-marker {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0); }
+
+/* these are the colors of the markers - line + arrow */
+/* line 655, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.color-1 {
+  color: #9a57bd; }
+
+/* line 659, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.color-2 {
+  color: #c96aa4; }
+
+/* line 663, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.color-3 {
+  color: #555859; }
+
+/* line 667, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.color-4 {
+  color: #5397c7; }
+
+/* line 671, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.color-5 {
+  color: #77cd91; }
+
+/* line 675, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+main {
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+  /* line 681, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  main h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 2em auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  /* line 691, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  main em {
+    font-size: 1.6rem; }
+  /* line 694, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  main.nav-is-visible {
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+    -ms-transform: translateY(80px);
+    -o-transform: translateY(80px);
+    transform: translateY(80px); }
+  @media only screen and (min-width: 768px) {
+    /* line 698, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    main.nav-is-visible {
+      -webkit-transform: translateY(170px);
+      -moz-transform: translateY(170px);
+      -ms-transform: translateY(170px);
+      -o-transform: translateY(170px);
+      transform: translateY(170px); }
+
+    /* line 701, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    main h1 {
+      font-size: 3.6rem;
+      margin: 1em auto; }
+
+    /* line 705, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    main em {
+      font-size: 2rem; }
+ }
+
+/* line 711, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-section {
+  padding: 2em 5%;
+  background-color: #eff0f4;
+  color: #555859; }
+  /* line 715, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-section p {
+    margin: 2em 0;
+    text-align: left;
+    line-height: 1.6;
+    color: #555859 important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  /* line 722, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-section h2 {
+    padding: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 26px;
+    color: #555859 important; }
+  @media only screen and (min-width: 768px) {
+    .cd-section {
+      padding: 4em 5%; }
+      /* line 732, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+      .cd-section p {
+        font-size: 1.8rem;
+        line-height: 2; } }
+  @media only screen and (min-width: 1170px) {
+    .cd-section {
+      padding: 4em 10%; } }
+
+/* line 742, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-footer {
+  padding: 2em 5%;
+  text-align: left;
+  font-size: 13px;
+  color: #c1c4ca;
+  background: #353E57; }
+  /* line 748, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-footer p {
+    margin: 0;
+    font-size: inherit; }
+  /* line 752, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-footer h4 {
+    font-size: 15px;
+    font-weight: 600; }
+  /* line 756, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-footer ul {
+    line-height: 1.7; }
+  /* line 759, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-footer ul li:first-child {
+    padding-top: 1em; }
+  /* line 762, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-footer li a {
+    color: #009ed6;
+    /*#9f9f9f;*/
+    border-bottom: 1px solid rgba(0, 158, 214, 0);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s; }
+  /* line 770, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-footer li a:hover {
+    color: #37cbfc;
+    border-bottom-color: #37cbfc; }
+  /* line 775, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-footer i.fa-heart {
+    -webkit-animation: heart-glow 5s infinite;
+    /* Safari 4+ */
+    -moz-animation: heart-glow 5s infinite;
+    /* Fx 5+ */
+    -o-animation: heart-glow 5s infinite;
+    /* Opera 12+ */
+    animation: heart-glow 5s infinite;
+    /* IE 10+ */
+    transition: 1s color;
+    -webkit-transition: 1s color;
+    -moz-transition: 1s color;
+    -o-transition: 1s color; }
+
+/* line 796, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.container-box-img {
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: #d2d4de 0 1px 2px;
+  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);*/ }
+
+/* line 808, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.container-box {
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  max-width: 1024px;
+  box-shadow: #d2d4de 0 1px 2px;
+  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);*/ }
+  /* line 819, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .container-box h2 {
+    font-size: 20px;
+    font-weight: 700; }
+  /* line 824, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .container-box h2, .container-box p {
+    color: #555859; }
+
+/* line 830, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-social img {
+  padding: 0;
+  margin-left: 2px;
+  width: 32px;
+  height: 32px;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+/* line 843, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-social img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%); }
+/* line 847, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-social li a {
+  border-bottom: none; }
+
+@-webkit-keyframes heart-glow {
+  /* line 853, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    color: #999DA5; }
+
+  /* line 856, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  50% {
+    color: #FF8888; }
+
+  /* line 859, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    color: #999DA5; } }
+
+@-moz-keyframes heart-glow {
+  /* line 865, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    color: #999DA5; }
+
+  /* line 868, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  50% {
+    color: #FF8888; }
+
+  /* line 871, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    color: #999DA5; } }
+
+@-o-keyframes heart-glow {
+  /* line 877, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    color: #999DA5; }
+
+  /* line 880, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  50% {
+    color: #FF8888; }
+
+  /* line 883, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    color: #999DA5; } }
+
+@keyframes heart-glow {
+  /* line 889, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    color: #999DA5; }
+
+  /* line 892, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  50% {
+    color: #FF8888; }
+
+  /* line 895, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    color: #999DA5; } }
+
+/* line 900, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-intro {
+  width: 90%;
+  max-width: 768px;
+  text-align: center; }
+
+/* line 906, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-intro {
+  margin: 0em auto; }
+  @media only screen and (min-width: 768px) {
+    .cd-intro {
+      margin: 1em auto; } }
+  @media only screen and (min-width: 1170px) {
+    .cd-intro {
+      margin: 2em auto; } }
+
+/* line 916, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-headline {
+  font-size: 3rem;
+  text-align: center;
+  /*line-height: 1.2;*/ }
+  @media only screen and (min-width: 768px) {
+    .cd-headline {
+      font-size: 4.4rem;
+      font-weight: 300; } }
+  @media only screen and (min-width: 1170px) {
+    .cd-headline {
+      font-size: 6rem; } }
+
+/* line 930, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: center; }
+  /* line 934, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-words-wrapper b {
+    display: block;
+    /*inline-block previously*/
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0;
+    text-align: center; }
+    /* line 943, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-words-wrapper b.is-visible {
+      position: relative; }
+  /* line 947, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .no-js .cd-words-wrapper b {
+    opacity: 0; }
+    /* line 949, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .no-js .cd-words-wrapper b.is-visible {
+      opacity: 1; }
+
+/* -------------------------------- 
+
+xtype 
+
+-------------------------------- */
+/* line 961, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-headline.type .cd-words-wrapper {
+  vertical-align: top; }
+  /* line 964, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-headline.type .cd-words-wrapper::after {
+    /* vertical bar */
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 90%;
+    width: 1px;
+    background-color: #aebcb9; }
+  /* line 975, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-headline.type .cd-words-wrapper.waiting::after {
+    -webkit-animation: cd-pulse 1s infinite;
+    -moz-animation: cd-pulse 1s infinite;
+    animation: cd-pulse 1s infinite; }
+  /* line 978, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-headline.type .cd-words-wrapper.selected {
+    background-color: #aebcb9; }
+    /* line 980, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-headline.type .cd-words-wrapper.selected::after {
+      visibility: hidden; }
+    /* line 983, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-headline.type .cd-words-wrapper.selected b {
+      color: #0d0d0d; }
+/* line 988, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-headline.type b {
+  visibility: hidden; }
+  /* line 990, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-headline.type b.is-visible {
+    visibility: visible; }
+/* line 994, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-headline.type i {
+  position: absolute;
+  visibility: hidden; }
+  /* line 997, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-headline.type i.in {
+    position: relative;
+    visibility: visible; }
+
+@-webkit-keyframes cd-pulse {
+  /* line 1005, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    -webkit-transform: translateY(-50%) scale(1);
+    opacity: 1; }
+
+  /* line 1009, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  40% {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    opacity: 0; }
+
+  /* line 1013, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -webkit-transform: translateY(-50%) scale(0);
+    opacity: 0; } }
+
+@-moz-keyframes cd-pulse {
+  /* line 1005, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    -moz-transform: translateY(-50%) scale(1);
+    opacity: 1; }
+
+  /* line 1009, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  40% {
+    -moz-transform: translateY(-50%) scale(0.9);
+    opacity: 0; }
+
+  /* line 1013, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -moz-transform: translateY(-50%) scale(0);
+    opacity: 0; } }
+
+@keyframes cd-pulse {
+  /* line 1005, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    -webkit-transform: translateY(-50%) scale(1);
+    -moz-transform: translateY(-50%) scale(1);
+    -ms-transform: translateY(-50%) scale(1);
+    -o-transform: translateY(-50%) scale(1);
+    transform: translateY(-50%) scale(1);
+    opacity: 1; }
+
+  /* line 1009, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  40% {
+    -webkit-transform: translateY(-50%) scale(0.9);
+    -moz-transform: translateY(-50%) scale(0.9);
+    -ms-transform: translateY(-50%) scale(0.9);
+    -o-transform: translateY(-50%) scale(0.9);
+    transform: translateY(-50%) scale(0.9);
+    opacity: 0; }
+
+  /* line 1013, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -webkit-transform: translateY(-50%) scale(0);
+    -moz-transform: translateY(-50%) scale(0);
+    -ms-transform: translateY(-50%) scale(0);
+    -o-transform: translateY(-50%) scale(0);
+    transform: translateY(-50%) scale(0);
+    opacity: 0; } }
+
+/* -------------------------------- 
+
+xrotate-1 
+
+-------------------------------- */
+/* line 1025, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-headline.rotate-1 .cd-words-wrapper {
+  -webkit-perspective: 300px;
+  -moz-perspective: 300px;
+  perspective: 300px; }
+/* line 1028, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-headline.rotate-1 b {
+  opacity: 0;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  transform: rotateX(180deg); }
+  /* line 1032, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-headline.rotate-1 b.is-visible {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-animation: cd-rotate-1-in 1.2s;
+    -moz-animation: cd-rotate-1-in 1.2s;
+    animation: cd-rotate-1-in 1.2s; }
+  /* line 1037, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-headline.rotate-1 b.is-hidden {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg); }
+
+@-webkit-keyframes cd-rotate-1-in {
+  /* line 1045, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0; }
+
+  /* line 1049, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  35% {
+    -webkit-transform: rotateX(120deg);
+    opacity: 0; }
+
+  /* line 1053, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  65% {
+    opacity: 0; }
+
+  /* line 1056, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    opacity: 1; } }
+
+@-moz-keyframes cd-rotate-1-in {
+  /* line 1045, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0; }
+
+  /* line 1049, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  35% {
+    -moz-transform: rotateX(120deg);
+    opacity: 0; }
+
+  /* line 1053, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  65% {
+    opacity: 0; }
+
+  /* line 1056, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -moz-transform: rotateX(360deg);
+    opacity: 1; } }
+
+@keyframes cd-rotate-1-in {
+  /* line 1045, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0; }
+
+  /* line 1049, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  35% {
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+    transform: rotateX(120deg);
+    opacity: 0; }
+
+  /* line 1053, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  65% {
+    opacity: 0; }
+
+  /* line 1056, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    opacity: 1; } }
+
+@-webkit-keyframes cd-rotate-1-out {
+  /* line 1063, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    -webkit-transform: rotateX(0deg);
+    opacity: 1; }
+
+  /* line 1067, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  35% {
+    -webkit-transform: rotateX(-40deg);
+    opacity: 1; }
+
+  /* line 1071, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  65% {
+    opacity: 0; }
+
+  /* line 1074, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -webkit-transform: rotateX(180deg);
+    opacity: 0; } }
+
+@-moz-keyframes cd-rotate-1-out {
+  /* line 1063, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    -moz-transform: rotateX(0deg);
+    opacity: 1; }
+
+  /* line 1067, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  35% {
+    -moz-transform: rotateX(-40deg);
+    opacity: 1; }
+
+  /* line 1071, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  65% {
+    opacity: 0; }
+
+  /* line 1074, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -moz-transform: rotateX(180deg);
+    opacity: 0; } }
+
+@keyframes cd-rotate-1-out {
+  /* line 1063, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    opacity: 1; }
+
+  /* line 1067, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  35% {
+    -webkit-transform: rotateX(-40deg);
+    -moz-transform: rotateX(-40deg);
+    -ms-transform: rotateX(-40deg);
+    -o-transform: rotateX(-40deg);
+    transform: rotateX(-40deg);
+    opacity: 1; }
+
+  /* line 1071, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  65% {
+    opacity: 0; }
+
+  /* line 1074, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    opacity: 0; } }
+
+/*Smooth entry reverse - Y axis*/
+@-webkit-keyframes smooth-entry-reverse {
+  /* line 1082, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2em); }
+
+  /* line 1086, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes smooth-entry-reverse {
+  /* line 1093, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(2em); }
+
+  /* line 1097, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+
+@keyframes smooth-entry-reverse {
+  /* line 1104, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2em);
+    -moz-transform: translateY(2em);
+    -ms-transform: translateY(2em);
+    -o-transform: translateY(2em);
+    transform: translateY(2em); }
+
+  /* line 1112, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+
+/*Smooth entry reverse - X axis*/
+@-webkit-keyframes smooth-entry-reverseX {
+  /* line 1124, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(5em); }
+
+  /* line 1128, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes smooth-entry-reverseX {
+  /* line 1135, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(30em); }
+
+  /* line 1139, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0); } }
+
+@keyframes smooth-entry-reverseX {
+  /* line 1146, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2em);
+    -moz-transform: translateX(2em);
+    -ms-transform: translateX(2em);
+    -o-transform: translateX(2em);
+    transform: translateX(2em); }
+
+  /* line 1154, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); } }
+
+/* line 1164, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-single-item {
+  position: relative;
+  background: #353E57; }
+
+/* line 1169, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-slider-wrapper {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: width 0.4s;
+  -moz-transition: width 0.4s;
+  transition: width 0.4s;
+  /* Force Hardware Acceleration in WebKit */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: width; }
+  @media only screen and (min-width: 1170px) {
+    .cd-slider-wrapper {
+      width: 50%; }
+      /* line 1180, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+      .cd-slider-active .cd-slider-wrapper {
+        width: 100%; } }
+
+/* line 1186, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-slider {
+  position: relative;
+  z-index: 1;
+  overflow: hidden; }
+  /* line 1190, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-slider::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'mobile';
+    display: none; }
+  /* line 1196, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-slider li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s; }
+    /* line 1205, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-slider li img {
+      display: block;
+      width: 100%; }
+    /* line 1209, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-slider li.selected {
+      position: relative;
+      z-index: 2;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0); }
+    /* line 1214, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-slider li.move-left {
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+      transform: translateX(-100%); }
+  @media only screen and (min-width: 1170px) {
+    .cd-slider {
+      cursor: pointer; }
+      /* line 1220, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+      .cd-slider::before {
+        /* never visible - this is used in jQuery to check the current MQ */
+        content: 'desktop'; }
+      /* line 1225, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+      .cd-slider::after {
+        /* slider cover layer - to indicate the image is clickable */
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(154, 87, 189, 0.4) url('../img/cd-icon-zoom.svg') no-repeat center center;
+        /* size of the icon */
+        background-size: 48px;
+        opacity: 0;
+        z-index: 4;
+        -webkit-transition: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        transition: opacity 0.2s; }
+      /* line 1243, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+      .no-touch .cd-slider:hover::after {
+        opacity: 1; }
+      /* line 1246, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+      .cd-slider-active .cd-slider {
+        cursor: auto; }
+        /* line 1248, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+        .cd-slider-active .cd-slider::after {
+          display: none; } }
+
+@media only screen and (min-width: 1170px) {
+  /* line 1256, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-slider-navigation li, .cd-slider-pagination {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.4s 0s, visibility 0s 0.4s;
+    -moz-transition: opacity 0.4s 0s, visibility 0s 0.4s;
+    transition: opacity 0.4s 0s, visibility 0s 0.4s; }
+    /* line 1260, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-slider-active .cd-slider-navigation li, .cd-slider-active .cd-slider-pagination {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transition: opacity 0.4s 0.4s, visibility 0s 0.4s;
+      -moz-transition: opacity 0.4s 0.4s, visibility 0s 0.4s;
+      transition: opacity 0.4s 0.4s, visibility 0s 0.4s; }
+ }
+
+/* line 1268, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-slider-navigation li {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  /* line 1272, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-slider-navigation li:first-of-type {
+    left: 10px; }
+  /* line 1275, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-slider-navigation li:last-of-type {
+    right: 10px; }
+  /* line 1278, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-slider-navigation li a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url('../img/cd-icon-arrow.svg') no-repeat center center;
+    -webkit-transition: opacity 0.2s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.2s 0s, visibility 0s 0s;
+    transition: opacity 0.2s 0s, visibility 0s 0s;
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap; }
+    /* line 1289, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-slider-navigation li a.inactive {
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+      -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
+      transition: opacity 0.2s 0s, visibility 0s 0.2s; }
+    /* line 1294, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .no-touch .cd-slider-navigation li a:hover {
+      opacity: 0.7; }
+  /* line 1298, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-slider-navigation li:first-of-type a {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  @media only screen and (min-width: 1170px) {
+    /* line 1302, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-slider-navigation li:first-child {
+      left: 30px; }
+
+    /* line 1305, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-slider-navigation li:last-child {
+      right: 30px; }
+ }
+
+/* line 1311, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-slider-pagination {
+  /* you won't see this element in the html but it will be created using jQuery */
+  position: absolute;
+  z-index: 2;
+  bottom: 30px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  visibility: hidden; }
+  /* line 15, c:\Program Files (x86)\Prepros\resources\app\node_modules\node-bourbon\assets\stylesheets/addons/clearfix */
+  .cd-slider-pagination:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 1320, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .touch .cd-slider-pagination {
+    visibility: hidden; }
+  /* line 1323, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-slider-pagination li {
+    display: inline-block;
+    float: left;
+    margin: 0 5px; }
+    /* line 1327, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+    .cd-slider-pagination li.selected a {
+      background: #555859; }
+  /* line 1331, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-slider-pagination a {
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 1px solid #555859;
+    /* fix a bug in IE9/10 - transparent anchor not clickable */
+    background-color: rgba(255, 255, 255, 0);
+    /* image replacement */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap; }
+
+/* line 1348, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-slider-wrapper .cd-close {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  background: url('../img/cd-icon-close.svg') no-repeat center center;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0.4s;
+  -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0.4s;
+  transition: transform 0.3s 0s, visibility 0s 0.4s; }
+  /* line 1365, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-slider-active .cd-slider-wrapper .cd-close {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.3s 0s, visibility 0s 0s, opacity 0.4s 0.4s;
+    -moz-transition: -moz-transform 0.3s 0s, visibility 0s 0s, opacity 0.4s 0.4s;
+    transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.4s 0.4s; }
+  /* line 1370, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .no-touch .cd-slider-active .cd-slider-wrapper .cd-close:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
+  @media only screen and (min-width: 1170px) {
+    .cd-slider-wrapper .cd-close {
+      display: block; } }
+
+/* line 1378, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-item-info {
+  padding: 50px 5%; }
+  /* line 1380, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-item-info h2, .cd-item-info p {
+    max-width: 100%;
+    padding: 0; }
+  /* line 1384, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-item-info h2 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: bold; }
+  /* line 1391, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .cd-item-info p {
+    line-height: 1.6;
+    margin: 1em 0;
+    font-weight: 400;
+    color: white; }
+  @media only screen and (min-width: 1170px) {
+    .cd-item-info {
+      position: absolute;
+      width: 50%;
+      top: 0;
+      right: 0;
+      padding: 60px 60px 0;
+      margin: 0; } }
+
+/* line 1407, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.cd-section2 {
+  background-color: #dee0ea;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative; }
+
+/* line 1415, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+#bottomImage {
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  -webkit-animation: smooth-entry-reverse 0.5s;
+  -moz-animation: smooth-entry-reverse 0.5s;
+  animation: smooth-entry-reverse 0.5s; }
+
+/* line 1427, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.singam {
+  -webkit-animation: smooth-entry-reverseX 0.5s;
+  -moz-animation: smooth-entry-reverseX 0.5s;
+  animation: smooth-entry-reverseX 0.5s; }
+
+/* line 1433, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.main-img-preview {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative; }
+  /* line 1438, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+  .main-img-preview img {
+    max-width: 100%;
+    display: block;
+    -webkit-animation: smooth-entry-reverse 1s;
+    -moz-animation: smooth-entry-reverse 1s;
+    animation: smooth-entry-reverse 1s; }
+
+/* -------------------------------- 
+
+xgem 
+
+-------------------------------- */
+/* line 1452, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+#gem-preview {
+  padding-top: 4em; }
+  @media only screen and (min-width: 1024px) {
+    #gem-preview {
+      padding-top: 6em; } }
+  @media only screen and (min-width: 1170px) {
+    #gem-preview {
+      padding-top: 6.4em; } }
+
+/* line 1462, C:/Users/Jeiman/Google Drive/4- Projects/Portfolio - 2015/web-2015-v7/scss/style.scss */
+.intro-container {
+  background-color: #353E57; }

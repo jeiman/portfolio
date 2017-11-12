@@ -1,0 +1,203 @@
+/*  SECTIONS  ============================================================================= */
+
+.section {
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    margin: 0px;
+    /*background:#eff0f4;*/
+    /*F8FBFC;*/
+}
+
+.section-footer {
+    background: none;
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 24px;
+    padding-left: 60px;
+    margin: 0px;
+}
+/*  GROUPING  ============================================================================= */
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+    /* For IE 6/7 (trigger hasLayout) */
+}
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+    display: block;
+    float: left;
+    color: #555859;
+    text-align: justify;
+    font-size: 12.5pt;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col-footer {
+    display: block;
+    float: left;
+    /*color:#555859;*/
+    
+    text-align: justify;
+    font-size: 13px;
+    margin: 1% 0 1% 1.6%;
+}
+
+.col-footer a {
+    color: #009ed6;
+}
+
+.col-footer a:hover {
+    color: #37cbfc;
+}
+
+.col p,
+h2 {
+    padding: 13px;
+}
+
+.avatar {
+    border-radius: 48px;
+    width: 48px;
+    height: 48px;
+}
+
+.avatar-big {
+    border-radius: 96px;
+    width: 96px;
+    height: 96px;
+}
+
+.avatar-contact a {
+    line-height: 3.6;
+    padding-left: 5px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.col-footer p {
+    padding: none;
+    text-align: left;
+}
+
+.col h2 {
+    text-align: center;
+}
+
+.col-footer p.footers,
+h4 {
+    color: #c1c4ca;
+}
+
+.col:first-child,
+.col-footer:first-child {
+    margin-left: 0;
+}
+/* all browsers except IE6 and lower */
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 600px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .col-footer {
+        margin: 1% 0 1% 0%;
+    }
+}
+/*  GRID OF THREE   ============================================================================= */
+
+.span_3_of_3 {
+    width: 100%;
+}
+
+.span_2_of_3 {
+    width: 66.13%;
+}
+
+.span_1_of_3 {
+    width: 32.26%;
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 600px) {
+    .span_3_of_3 {
+        width: 100%;
+    }
+    .span_2_of_3 {
+        width: 100%;
+    }
+    .span_1_of_3 {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .section-footer {
+        padding-left: 0;
+    }
+    .span_1_of_3:first-child {
+        border-bottom: 3px solid #2A3043;
+    }
+}
+/*  GRID OF TWO  */
+
+.span_2_of_2 {
+    width: 100%;
+}
+
+.span_1_of_2 {
+    width: 49.2%;
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 600px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .span_2_of_2,
+    .span_1_of_2 {
+        width: 100%;
+    }
+}
+/*  GRID OF FOUR  */
+
+.span_4_of_4 {
+    width: 100%;
+}
+
+.span_3_of_4 {
+    width: 74.6%;
+}
+
+.span_2_of_4 {
+    width: 49.2%;
+}
+
+.span_1_of_4 {
+    width: 23.8%;
+}
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+
+@media only screen and (max-width: 600px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .span_1_of_4,
+    .span_2_of_4,
+    .span_3_of_4,
+    .span_4_of_4 {
+        width: 100%;
+    }
+}

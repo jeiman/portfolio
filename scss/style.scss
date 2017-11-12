@@ -1,0 +1,1464 @@
+@import 'bourbon'; // http://bourbon.io/
+@import '../partials/variables'; // colors, fonts etc...
+@import '../partials/mixins'; // custom mixins
+@import '../partials/layout'; // responsive grid and media queries
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+/* --------------------x------------ 
+
+Primary style
+
+-------------------------------- */
+
+*,
+*::after,
+*::before {
+    @include box-sizing(border-box);
+}
+
+*::after,
+*::before {
+    content: '';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: {
+        size: 1.6rem;
+        family: $primary-font; // variables inside partials > _variables.scss
+    }
+    background-color: $body-bg;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+        color: $link-color-hover;
+    }
+}
+
+p {
+    font-size: 14pt;
+    margin: 2em 2em;
+    line-height: 1.6;
+    @include font-smoothing;
+    &.white {
+        color: $text-color;
+        font-weight: 300;
+    }
+    &.headline-tag {
+        color: red;
+        font-style: italic;
+    }
+}
+
+em {
+    display: block;
+    color: #6b7175;
+    font-style: italic;
+    font-size: 2rem;
+    margin: .6em 0;
+}
+
+img {
+    &.img-responsive {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.techsols {
+    width: 399px;
+    height: 465px;
+}
+
+.services {
+    width: 130px;
+    height: 130px;
+}
+
+.panel {
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    h2 {
+        background: #33b5e5;
+        /*height: 64px;*/
+        
+        margin: -1px -1px 0;
+        padding: 0 15px;
+        border-radius: 3px 3px 0 0;
+        color: #ffffff;
+        font-size: 1.5em;
+        line-height: 34px;
+    }
+    p {
+        padding: 10px;
+    }
+    ul {
+        li {
+            padding: 15px;
+            border-bottom: 1px solid #e6e6e6;
+            span {
+                text-align: left;
+                /*width:20%;*/
+                
+                padding-right: 55px;
+                display: table-cell;
+                i {
+                    padding-left: 3px;
+                    padding-top: 4px;
+                    display: inline-block;
+                    color: #33b5e5;
+                }
+                &.date {
+                    padding-top: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+.panel-skills {
+    background: #ffffff;
+    border: 1px solid #e6e6e6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    h2 {
+        background: #33b5e5;
+        /*height: 64px;*/
+        
+        margin: -1px -1px 0;
+        padding: 0 15px;
+        border-radius: 3px 3px 0 0;
+        color: #ffffff;
+        font-size: 1.5em;
+        line-height: 34px;
+    }
+    ul {
+        li {
+            font-size: 15px;
+            padding: 15px;
+            margin: 10px 8px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            background: #33b5e5;
+            color: #fff;
+            display: inline-block;
+        }
+    }
+}
+
+.spotify {
+    color: #23D05F;
+    height: 190px;
+    text-align: center;
+}
+
+.cd-btn {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: $body-bg;
+    color: $color-4-white;
+    font-weight: bold;
+    @include font-smoothing;
+    border-radius: 50px;
+    /*box-shadow: inset 0 1px 0 rgba(#fff, .5), 0 0 5px rgba(#000, .1);*/
+    
+    @include transition(all .2s);
+    .no-touch &:hover {
+        /*box-shadow: inset 0 1px 0 rgba(#fff, .5), 0 0 20px rgba(#000, .3);*/
+        
+        color: $color-skybluefooter;
+    }
+}
+
+.cd-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    @include transition(visibility 0s .6s);
+    &::after {
+        /* overlay layer */
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(#000, 0);
+        cursor: pointer;
+        @include transition(background .3s .3s);
+    }
+    &.is-visible {
+        visibility: visible;
+        @include transition(visibility 0s 0s);
+        &::after {
+            background: rgba(#000, .6);
+            @include transition(background .3s 0s);
+        }
+        .cd-panel-close::before {
+            @include animation(cd-close-1 .6s .3s);
+        }
+        .cd-panel-close::after {
+            @include animation(cd-close-2 .6s .3s);
+        }
+    }
+}
+
+@include keyframes(cd-close-1) {
+    0%, 50% {
+        @include transform(rotate(0));
+    }
+    100% {
+        @include transform(rotate(45deg));
+    }
+}
+
+@include keyframes(cd-close-2) {
+    0%, 50% {
+        @include transform(rotate(0));
+    }
+    100% {
+        @include transform(rotate(-45deg));
+    }
+}
+
+.cd-panel-header {
+    position: fixed;
+    width: $panel-width-S; // variables inside partials > _variables.scss
+    height: 50px;
+    line-height: 50px;
+    background: rgba($color-4-white, .96);
+    z-index: 2;
+    box-shadow: 0 1px 1px rgba(#000, .08);
+    @include transition(top .3s 0s);
+    h1 {
+        font-weight: bold;
+        color: $body-bg;
+        padding-left: 5%;
+    }
+    .from-right &,
+    .from-left & {
+        top: -50px;
+    }
+    .from-right & {
+        right: 0;
+    }
+    .from-left & {
+        left: 0;
+    }
+    .is-visible & {
+        top: 0;
+        @include transition(top .3s .3s);
+    }
+    @include MQ(M) {
+        width: $panel-width-M;
+    }
+    @include MQ(L) {
+        width: $panel-width-L;
+    }
+}
+
+.cd-panel-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 60px;
+    /* image replacement */
+    
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    &::before, &::after {
+        /* close icon created in CSS */
+        
+        position: absolute;
+        top: 22px;
+        left: 20px;
+        height: 3px;
+        width: 20px;
+        background-color: $color-3-bluedark;
+        /* this fixes a bug where pseudo elements are slighty off position */
+        
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    &::before {
+        @include transform(rotate(45deg));
+    }
+    &::after {
+        @include transform(rotate(-45deg));
+    }
+    .no-touch &:hover {
+        background-color: $color-3-bluedark;
+        &::before, &::after {
+            background-color: $color-4-white;
+            @include transition-property(transform);
+            @include transition-duration(.3s);
+        }
+        &::before {
+            @include transform(rotate(220deg));
+        }
+        &::after {
+            @include transform(rotate(135deg));
+        }
+    }
+}
+
+.cd-panel-container {
+    position: fixed;
+    width: $panel-width-S;
+    height: 100%;
+    top: 0;
+    background: $color-1-bluelight;
+    z-index: 1;
+    @include transition-property(transform);
+    @include transition-duration(.3s);
+    @include transition-delay(.3s);
+    .from-right & {
+        right: 0;
+        @include transform(translate3d(100%, 0, 0));
+    }
+    .from-left & {
+        left: 0;
+        @include transform(translate3d(-100%, 0, 0));
+    }
+    .is-visible & {
+        @include transform(translate3d(0, 0, 0));
+        @include transition-delay(0s);
+    }
+    @include MQ(M) {
+        width: $panel-width-M;
+    }
+    @include MQ(L) {
+        width: $panel-width-L;
+    }
+}
+
+.cd-panel-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 70px 5%;
+    overflow: auto;
+    /* smooth scrolling on touch devices */
+    
+    -webkit-overflow-scrolling: touch;
+    p {
+        /*@include font-size(14px);*/
+        
+        color: $color-3-bluedark;
+        line-height: 1.4;
+        margin: 2em 0;
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+    @include MQ(M) {
+        p {
+            /*@include font-size(16px);*/
+            
+            line-height: 1.6;
+        }
+    }
+}
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+
+.cd-header {
+    height: 95px;
+    width: 90%;
+    margin: 0 auto;
+    @include transition(transform $animation-duration);
+    @include clearfix;
+    /* Force Hardware Acceleration in WebKit */
+    
+    @include transform(translateZ(0));
+    @include backface-visibility(hidden);
+    &.nav-is-visible {
+        @include transform(translateY($nav-height-S));
+    }
+    @include MQ(M) {
+        &.nav-is-visible {
+            @include transform(translateY($nav-height-M));
+        }
+    }
+}
+
+.cd-logo {
+    float: left;
+    margin-top: 17px;
+    img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+.cd-3d-nav-trigger {
+    position: relative;
+    float: right;
+    height: 45px;
+    width: 45px;
+    margin-top: 18px;
+    /* replace text with background image */
+    
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    color: transparent;
+    span, span::before, span::after {
+        /* hamburger icon in CSS */
+        
+        position: absolute;
+        width: 28px;
+        height: 3px;
+        background-color: #FFF;
+        @include backface-visibility(hidden);
+    }
+    span {
+        /* this is the central line */
+        
+        top: 21px;
+        left: 8px;
+        @include transition(background 0.2s $animation-duration);
+        &::before, &:after {
+            /* these are the upper and lower lines */
+            
+            content: '';
+            left: 0;
+            @include transition(transform 0.2s $animation-duration);
+        }
+        &::before {
+            bottom: 8px;
+        }
+        &::after {
+            top: 8px;
+        }
+    }
+    .nav-is-visible & {
+        span {
+            /* hide line in the center */
+            
+            background-color: rgba(#FFF, 0);
+            &::before, &::after {
+                /* keep visible other 2 lines */
+                
+                background-color: rgba(#FFF, 1);
+            }
+            &::before {
+                @include transform(translateY(8px) rotate(-45deg));
+            }
+            &::after {
+                @include transform(translateY(-8px) rotate(45deg));
+            }
+        }
+    }
+}
+
+.cd-3d-nav-container {
+    /* this is the 3D navigation container */
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: $nav-height-S;
+    width: 100%;
+    background-color: $nav-container-bg;
+    visibility: hidden;
+    /* enable a 3D-space for children elements */
+    
+    @include perspective(1000px);
+    @include transform(translateY(-100%));
+    -webkit-transition: -webkit-transform $animation-duration 0s, visibility 0s $animation-duration;
+    -moz-transition: -moz-transform $animation-duration 0s, visibility 0s $animation-duration;
+    transition: transform $animation-duration 0s, visibility 0s $animation-duration;
+    &.nav-is-visible {
+        visibility: visible;
+        @include transform(translateY(0));
+        -webkit-transition: -webkit-transform $animation-duration 0s, visibility $animation-duration 0s;
+        -moz-transition: -moz-transform $animation-duration 0s, visibility $animation-duration 0s;
+        transition: transform $animation-duration 0s, visibility $animation-duration 0s;
+    }
+    @include MQ(M) {
+        height: $nav-height-M;
+    }
+}
+
+.cd-3d-nav {
+    /* this is the 3D rotating navigation */
+    
+    position: relative;
+    height: 100%;
+    background-color: $nav-bg;
+    /* Force Hardware Acceleration */
+    
+    @include transform(translateZ(0));
+    @include backface-visibility(hidden);
+    @include transform-origin(center bottom);
+    @include transform(rotateX(90deg));
+    @include transition(transform $animation-duration);
+    &::after {
+        /* menu dark cover layer - to enhance perspective effect */
+        
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $nav-container-bg;
+        opacity: 1;
+        visibility: visible;
+        @include transition(opacity $animation-duration 0s, visibility $animation-duration 0s);
+    }
+    li {
+        height: 100%;
+        @include column(1/$nav-items); // see partials > _layout.scss
+        &:first-of-type a::before {
+            background-image: url(../img/icon-1.svg);
+        }
+        &:nth-of-type(2) a::before {
+            background-image: url(../img/icon-2.svg);
+        }
+        &:nth-of-type(3) a::before {
+            background-image: url(../img/icon-3.svg);
+        }
+        &:nth-of-type(4) a::before {
+            background-image: url(../img/icon-4.svg);
+        }
+        &:nth-of-type(5) a::before {
+            background-image: url(../img/icon-5.svg);
+        }
+    }
+    a {
+        position: relative;
+        display: block;
+        height: 100%;
+        color: transparent;
+        @include transition(background-color 0.2s);
+        &::before {
+            /* navigation icons */
+            
+            content: '';
+            height: 32px;
+            width: 32px;
+            position: absolute;
+            @include center;
+            background-size: 32px 64px;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+        }
+        .no-touch &:hover {
+            background-color: darken($body-bg, 15%);
+        }
+    }
+    .cd-selected a {
+        background-color: darken($body-bg, 20%);
+        .no-touch &:hover {
+            background-color: darken($body-bg, 20%);
+        }
+        &::before {
+            background-position: 0 -32px;
+        }
+    }
+    .nav-is-visible & {
+        @include transform(translateZ(0));
+        &::after {
+            /* menu cover layer - hide it when navigation is visible */
+            
+            opacity: 0;
+            visibility: hidden;
+            @include transition(opacity $animation-duration 0s, visibility 0s $animation-duration);
+        }
+    }
+    @include MQ(M) {
+        a {
+            padding: 7.6em 1em 0;
+            color: $text-color;
+            font: {
+                size: 1.3rem;
+                weight: 600;
+            }
+            text-align: center;
+            @include font-smoothing;
+            /* truncate text with ellipsis if too long */
+            
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &::before {
+                top: 4.4em;
+                @include center(x);
+            }
+        }
+    }
+}
+
+.cd-marker {
+    /* line at the bottom of nav selected item */
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%/$nav-items;
+    background-color: currentColor;
+    @include transform-origin(center bottom);
+    @include transform(translateZ(0) rotateX(90deg));
+    -webkit-transition: -webkit-transform $animation-duration, left 0.5s, color 0.5s, background-color 0.5s;
+    -moz-transition: -moz-transform $animation-duration, left 0.5s, color 0.5s, background-color 0.5s;
+    transition: transform $animation-duration, left 0.5s, color 0.5s, background-color 0.5s;
+    &::before {
+        /* triangle at the bottom of nav selected item */
+        
+        content: '';
+        position: absolute;
+        bottom: 3px;
+        @include center(x);
+        height: 0;
+        width: 0;
+        border: 10px solid transparent;
+        border-bottom-color: inherit;
+    }
+    .nav-is-visible & {
+        @include transform(translateZ(0));
+    }
+}
+/* these are the colors of the markers - line + arrow */
+
+.color-1 {
+    color: $color-1;
+}
+
+.color-2 {
+    color: $color-2;
+}
+
+.color-3 {
+    color: $color-3;
+}
+
+.color-4 {
+    color: $color-4;
+}
+
+.color-5 {
+    color: $color-5;
+}
+
+main {
+    @include transition(transform $animation-duration);
+    /* Force Hardware Acceleration in WebKit */
+    
+    @include transform(translateZ(0));
+    @include backface-visibility(hidden);
+    h1 {
+        text-align: center;
+        font: {
+            size: 2.4rem;
+            weight: 300;
+        }
+        color: $text-color;
+        margin: 2em auto;
+        @include font-smoothing;
+    }
+    em {
+        font-size: 1.6rem;
+    }
+    &.nav-is-visible {
+        @include transform(translateY($nav-height-S));
+    }
+    @include MQ(M) {
+        &.nav-is-visible {
+            @include transform(translateY($nav-height-M));
+        }
+        h1 {
+            font-size: 3.6rem;
+            margin: 1em auto;
+        }
+        em {
+            font-size: 2rem;
+        }
+    }
+}
+
+.cd-section {
+    padding: 2em 5%;
+    background-color: $color-section-white;
+    color: $color-3;
+    p {
+        margin: 2em 0;
+        text-align: left;
+        line-height: 1.6;
+        color: $color-3 important;
+        @include font-smoothing;
+    }
+    h2 {
+        padding: 30px 0;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 26px;
+        color: #555859 important;
+    }
+    @include MQ(M) {
+        padding: 4em 5%;
+        p {
+            font-size: 1.8rem;
+            line-height: 2;
+        }
+    }
+    @include MQ(L) {
+        padding: 4em 10%;
+    }
+}
+
+.cd-footer {
+    padding: 2em 5%;
+    text-align: left;
+    font-size: 13px;
+    color: $footer-font-color;
+    background: $body_bg;
+    p {
+        margin: 0;
+        font-size: inherit;
+    }
+    h4 {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    ul {
+        line-height: 1.7;
+    }
+    ul li:first-child {
+        padding-top: 1em;
+    }
+    li a {
+        color: #009ed6;
+        /*#9f9f9f;*/
+        
+        border-bottom: 1px solid rgba(0, 158, 214, 0);
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+    }
+    li a:hover {
+        color: #37cbfc;
+        border-bottom-color: #37cbfc;
+    }
+    i {
+        &.fa-heart {
+            -webkit-animation: heart-glow 5s infinite;
+            /* Safari 4+ */
+            
+            -moz-animation: heart-glow 5s infinite;
+            /* Fx 5+ */
+            
+            -o-animation: heart-glow 5s infinite;
+            /* Opera 12+ */
+            
+            animation: heart-glow 5s infinite;
+            /* IE 10+ */
+            
+            transition: 1s color;
+            -webkit-transition: 1s color;
+            -moz-transition: 1s color;
+            -o-transition: 1s color;
+        }
+    }
+}
+
+.container-box-img {
+    background: $color-white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: #d2d4de 0 1px 2px;
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);*/
+}
+
+.container-box {
+    background: $color-white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    max-width: 1024px;
+    box-shadow: #d2d4de 0 1px 2px;
+    /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);*/
+    
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    h2,
+    p {
+        color: #555859;
+    }
+}
+
+.cd-social {
+    img {
+        padding: 0;
+        margin-left: 2px;
+        width: 32px;
+        height: 32px;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        -o-transition: all ease 0.5s;
+        -ms-transition: all ease 0.5s;
+        transition: all ease 0.5s;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    img:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+    li a {
+        border-bottom: none;
+    }
+}
+
+@-webkit-keyframes heart-glow {
+    0% {
+        color: #999DA5;
+    }
+    50% {
+        color: #FF8888;
+    }
+    100% {
+        color: #999DA5;
+    }
+}
+
+@-moz-keyframes heart-glow {
+    0% {
+        color: #999DA5;
+    }
+    50% {
+        color: #FF8888;
+    }
+    100% {
+        color: #999DA5;
+    }
+}
+
+@-o-keyframes heart-glow {
+    0% {
+        color: #999DA5;
+    }
+    50% {
+        color: #FF8888;
+    }
+    100% {
+        color: #999DA5;
+    }
+}
+
+@keyframes heart-glow {
+    0% {
+        color: #999DA5;
+    }
+    50% {
+        color: #FF8888;
+    }
+    100% {
+        color: #999DA5;
+    }
+}
+
+.cd-intro {
+    width: 90%;
+    max-width: $M;
+    text-align: center;
+}
+
+.cd-intro {
+    margin: 0em auto;
+    @include MQ(M) {
+        margin: 1em auto;
+    }
+    @include MQ(L) {
+        margin: 2em auto;
+    }
+}
+
+.cd-headline {
+    font-size: 3rem;
+    text-align: center;
+    /*line-height: 1.2;*/
+    
+    @include MQ(M) {
+        font-size: 4.4rem;
+        font-weight: 300;
+    }
+    @include MQ(L) {
+        font-size: 6rem;
+    }
+}
+
+.cd-words-wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    b {
+        display: block;
+        /*inline-block previously*/
+        
+        position: absolute;
+        white-space: nowrap;
+        left: 0;
+        top: 0;
+        text-align: center;
+        &.is-visible {
+            position: relative;
+        }
+    }
+    .no-js & b {
+        opacity: 0;
+        &.is-visible {
+            opacity: 1;
+        }
+    }
+}
+/* -------------------------------- 
+
+xtype 
+
+-------------------------------- */
+
+.cd-headline.type {
+    .cd-words-wrapper {
+        vertical-align: top;
+        //		overflow: hidden;
+        &::after {
+            /* vertical bar */
+            
+            content: '';
+            position: absolute;
+            right: 0;
+            @include center(y);
+            height: 90%;
+            width: 1px;
+            background-color: $color-1-xtype;
+        }
+        &.waiting::after {
+            @include animation(cd-pulse 1s infinite);
+        }
+        &.selected {
+            background-color: $color-1-xtype;
+            &::after {
+                visibility: hidden;
+            }
+            b {
+                color: $color-3-xtype;
+            }
+        }
+    }
+    b {
+        visibility: hidden;
+        &.is-visible {
+            visibility: visible;
+        }
+    }
+    i {
+        position: absolute;
+        visibility: hidden;
+        &.in {
+            position: relative;
+            visibility: visible;
+        }
+    }
+}
+
+@include keyframes(cd-pulse) {
+    0% {
+        @include transform(translateY(-50%) scale(1));
+        opacity: 1;
+    }
+    40% {
+        @include transform(translateY(-50%) scale(0.9));
+        opacity: 0;
+    }
+    100% {
+        @include transform(translateY(-50%) scale(0));
+        opacity: 0;
+    }
+}
+/* -------------------------------- 
+
+xrotate-1 
+
+-------------------------------- */
+
+.cd-headline.rotate-1 {
+    .cd-words-wrapper {
+        @include perspective(300px);
+    }
+    b {
+        opacity: 0;
+        @include transform-origin(50% 100%);
+        @include transform(rotateX(180deg));
+        &.is-visible {
+            opacity: 1;
+            @include transform(rotateX(0deg));
+            @include animation(cd-rotate-1-in 1.2s);
+        }
+        &.is-hidden {
+            @include transform(rotateX(180deg));
+            //@include animation(cd-rotate-1-out 1.2s);
+        }
+    }
+}
+
+@include keyframes(cd-rotate-1-in) {
+    0% {
+        @include transform(rotateX(180deg));
+        opacity: 0;
+    }
+    35% {
+        @include transform(rotateX(120deg));
+        opacity: 0;
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        @include transform(rotateX(360deg));
+        opacity: 1;
+    }
+}
+
+@include keyframes(cd-rotate-1-out) {
+    0% {
+        @include transform(rotateX(0deg));
+        opacity: 1;
+    }
+    35% {
+        @include transform(rotateX(-40deg));
+        opacity: 1;
+    }
+    65% {
+        opacity: 0;
+    }
+    100% {
+        @include transform(rotateX(180deg));
+        opacity: 0;
+    }
+}
+/*Smooth entry reverse - Y axis*/
+
+@-webkit-keyframes smooth-entry-reverse {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(2em);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes smooth-entry-reverse {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(2em);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@keyframes smooth-entry-reverse {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(2em);
+        -moz-transform: translateY(2em);
+        -ms-transform: translateY(2em);
+        -o-transform: translateY(2em);
+        transform: translateY(2em);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+/*Smooth entry reverse - X axis*/
+
+@-webkit-keyframes smooth-entry-reverseX {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(5em);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-moz-keyframes smooth-entry-reverseX {
+    0% {
+        opacity: 0;
+        -moz-transform: translateX(30em);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateX(0);
+    }
+}
+
+@keyframes smooth-entry-reverseX {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(2em);
+        -moz-transform: translateX(2em);
+        -ms-transform: translateX(2em);
+        -o-transform: translateX(2em);
+        transform: translateX(2em);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.cd-single-item {
+    position: relative;
+    background: $body-bg;
+}
+
+.cd-slider-wrapper {
+    position: relative;
+    z-index: 1;
+    @include transition(width $expand-animation-duration);
+    /* Force Hardware Acceleration in WebKit */
+    
+    @include transform(translateZ(0));
+    @include backface-visibility(hidden);
+    will-change: width;
+    @include MQ(L) {
+        width: 50%;
+        .cd-slider-active & {
+            width: 100%;
+        }
+    }
+}
+
+.cd-slider {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &::before {
+        /* never visible - this is used in jQuery to check the current MQ */
+        
+        content: 'mobile';
+        display: none;
+    }
+    li {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        @include transform(translateX(100%));
+        @include transition(transform .3s);
+        img {
+            display: block;
+            width: 100%;
+        }
+        &.selected {
+            position: relative;
+            z-index: 2;
+            @include transform(translateX(0));
+        }
+        &.move-left {
+            @include transform(translateX(-100%));
+        }
+    }
+    @include MQ(L) {
+        cursor: pointer;
+        &::before {
+            /* never visible - this is used in jQuery to check the current MQ */
+            
+            content: 'desktop';
+        }
+        &::after {
+            /* slider cover layer - to indicate the image is clickable */
+            
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba($color-1, .4) url('../img/cd-icon-zoom.svg') no-repeat center center;
+            /* size of the icon */
+            
+            background-size: 48px;
+            opacity: 0;
+            z-index: 4;
+            @include transition(opacity .2s);
+        }
+        .no-touch &:hover::after {
+            opacity: 1;
+        }
+        .cd-slider-active & {
+            cursor: auto;
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@include MQ(L) {
+    .cd-slider-navigation li, .cd-slider-pagination {
+        opacity: 0;
+        visibility: hidden;
+        @include transition(opacity $expand-animation-duration 0s, visibility 0s $expand-animation-duration);
+        .cd-slider-active & {
+            opacity: 1;
+            visibility: visible;
+            @include transition(opacity $expand-animation-duration $expand-animation-duration, visibility 0s $expand-animation-duration);
+        }
+    }
+}
+
+.cd-slider-navigation li {
+    position: absolute;
+    z-index: 2;
+    @include center(y); // see partials > _mixins.scss
+    &:first-of-type {
+        left: 10px;
+    }
+    &:last-of-type {
+        right: 10px;
+    }
+    a {
+        display: block;
+        width: 48px;
+        height: 48px;
+        background: url('../img/cd-icon-arrow.svg') no-repeat center center;
+        @include transition(opacity .2s 0s, visibility 0s 0s);
+        /* image replacement */
+        
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+        &.inactive {
+            opacity: 0;
+            visibility: hidden;
+            @include transition(opacity .2s 0s, visibility 0s .2s);
+        }
+        .no-touch &:hover {
+            opacity: .7;
+        }
+    }
+    &:first-of-type a {
+        @include transform(rotate(180deg));
+    }
+    @include MQ(L) {
+        &:first-child {
+            left: 30px;
+        }
+        &:last-child {
+            right: 30px;
+        }
+    }
+}
+
+.cd-slider-pagination {
+    /* you won't see this element in the html but it will be created using jQuery */
+    
+    position: absolute;
+    z-index: 2;
+    bottom: 30px;
+    @include center(x); // mixins inside partials > _mixins.scss
+    @include clearfix;
+    visibility: hidden;
+    .touch & {
+        visibility: hidden;
+    }
+    li {
+        display: inline-block;
+        float: left;
+        margin: 0 5px;
+        &.selected a {
+            background: $color-3;
+        }
+    }
+    a {
+        display: block;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        border: 1px solid $color-3;
+        /* fix a bug in IE9/10 - transparent anchor not clickable */
+        
+        background-color: rgba(#FFF, 0);
+        /* image replacement */
+        
+        overflow: hidden;
+        text-indent: 100%;
+        white-space: nowrap;
+    }
+}
+
+.cd-slider-wrapper .cd-close {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: url('../img/cd-icon-close.svg') no-repeat center center;
+    /* image replacement */
+    
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    @include transition(transform .3s 0s, visibility 0s $expand-animation-duration);
+    .cd-slider-active & {
+        visibility: visible;
+        opacity: 1;
+        @include transition(transform .3s 0s, visibility 0s 0s, opacity $expand-animation-duration $expand-animation-duration);
+    }
+    .no-touch .cd-slider-active &:hover {
+        @include transform(scale(1.2));
+    }
+    @include MQ(L) {
+        display: block;
+    }
+}
+
+.cd-item-info {
+    padding: 50px 5%;
+    h2, p {
+        max-width: 100%;
+        padding: 0;
+    }
+    h2 {
+        color: $color-white;
+        font: {
+            size: 2.4rem;
+            weight: bold;
+        }
+    }
+    p {
+        line-height: 1.6;
+        margin: 1em 0;
+        font-weight: 400;
+        color: lighten($color-5, 45%);
+    }
+    @include MQ(L) {
+        position: absolute;
+        width: 50%;
+        top: 0;
+        right: 0;
+        padding: 60px 60px 0;
+        margin: 0;
+    }
+}
+
+.cd-section2 {
+    background-color: #dee0ea;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#bottomImage {
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    -webkit-animation: smooth-entry-reverse 0.5s;
+    -moz-animation: smooth-entry-reverse 0.5s;
+    animation: smooth-entry-reverse 0.5s;
+}
+
+.singam {
+    -webkit-animation: smooth-entry-reverseX 0.5s;
+    -moz-animation: smooth-entry-reverseX 0.5s;
+    animation: smooth-entry-reverseX 0.5s;
+}
+
+&.main-img-preview {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    img {
+        max-width: 100%;
+        display: block;
+        -webkit-animation: smooth-entry-reverse 1s;
+        -moz-animation: smooth-entry-reverse 1s;
+        animation: smooth-entry-reverse 1s;
+    }
+}
+/* -------------------------------- 
+
+xgem 
+
+-------------------------------- */
+
+#gem-preview {
+    padding-top: 4em;
+    @include MQ(ML) {
+        padding-top: 6em;
+    }
+    @include MQ(L) {
+        padding-top: 6.4em;
+    }
+}
+
+.intro-container {
+    background-color: #353E57;
+}
